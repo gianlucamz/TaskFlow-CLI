@@ -1,0 +1,27 @@
+name: "Meu Primeiro Pipeline"
+description: "Exemplo de automação com TaskFlow CLI"
+parallel: false
+
+tasks:
+  - type: notify
+    name: "Início"
+    message: "Iniciando pipeline de exemplo..."
+    level: info
+
+  - type: shell
+    name: "Verificar Node.js"
+    command: "node --version"
+
+  - type: shell
+    name: "Listar arquivos"
+    command: "dir"
+
+  - type: http
+    name: "Testar API pública"
+    url: "https://jsonplaceholder.typicode.com/todos/1"
+    method: GET
+
+  - type: notify
+    name: "Fim"
+    message: "Pipeline concluído com sucesso!"
+    level: info
