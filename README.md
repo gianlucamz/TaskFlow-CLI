@@ -82,12 +82,18 @@ tasks:
 ## Estrutura do projeto
 
 src/
-├── cli/ # Entrada da CLI (Commander)
-├── parser/ # Leitura e validação do YAML com Zod
-├── runner/ # Execução sequencial ou paralela
-├── tasks/ # Handlers de cada tipo de tarefa
-├── logger/ # Logs coloridos com Chalk
-└── types/ # Interfaces, Enums e Types
+
+  ├── cli/ # Entrada da CLI (Commander)
+
+  ├── parser/ # Leitura e validação do YAML com Zod
+
+  ├── runner/ # Execução sequencial ou paralela
+
+  ├── tasks/ # Handlers de cada tipo de tarefa
+
+  ├── logger/ # Logs coloridos com Chalk
+
+  └── types/ # Interfaces, Enums e Types
 
 ## Conceitos de TypeScript aplicados
 
